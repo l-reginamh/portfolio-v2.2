@@ -3,7 +3,7 @@ import ExperienceBlock from './ExperienceBlock';
 
 export default function Experience({experiences}) {
     return (
-        <div id='experience' className='exp background container'>
+        <div id="experience" className="exp background container">
             <div className="vertical-title">
                 Experience
             </div>
