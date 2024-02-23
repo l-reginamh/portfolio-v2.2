@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "source": ".",
+    "ignore": [
+      ".env",
+      ".env.local",
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "asia-southeast1"
+    },
+    "cleanUrls": true
+  }
+}
