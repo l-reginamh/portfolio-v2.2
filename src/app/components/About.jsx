@@ -13,8 +13,9 @@ export default function About({skills}){
                     <Image 
                         src="/assets/images/profile.png"
                         alt="Profile"
-                        width={279}
-                        height={279}
+                        width={0}
+                        height={0}
+                        style={{width: '100%', height: 'auto'}}
                     />
                 </div>
                 <div className="about-description">
