@@ -4,10 +4,12 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSun, faMoon, faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
+import { motion, useScroll } from "framer-motion";
 
 library.add(faSun, faMoon, faXmark, faBars);
 
 export default function Headers(props) {
+    const { scrollYProgress } = useScroll();
     const logoSrc = "/assets/images/logo-text.png";
     const logoDarkSrc = "/assets/images/logo-text-dark.png";
     const [click, setClick] = useState(false);
@@ -38,16 +40,21 @@ export default function Headers(props) {
         if(size.width > 768) {
             setClick(false)
         } 
-    }, []);
+    });
     return (
         <header className="header">
+            <motion.div
+            className="progress-bar"
+            style={{ scaleX: scrollYProgress }}
+            />
             <nav className="nav">
                 <a href="/" className="nav-logo">
                     <Image
                         src={props.theme == "light" ? logoSrc : logoDarkSrc}
                         alt="reg"
-                        width={30}
-                        height={30}
+                        width={0}
+                        height={0}
+                        style={{width: 'auto', height: '100%'}}
                     />
                 </a>
                 <div className="nav-menu">
@@ -77,8 +84,9 @@ export default function Headers(props) {
                     <Image
                         src={props.theme == "light" ? logoSrc : logoDarkSrc}
                         alt="reg"
-                        width={30}
-                        height={30}
+                        width={0}
+                        height={0}
+                        style={{width: 'auto', height: '100%'}}
                     />
                 </a>
                 <button className="nav-btn">
