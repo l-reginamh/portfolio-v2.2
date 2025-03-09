@@ -14,6 +14,7 @@ export default function Contact() {
                     <a href="mailto:reginaliew9@gmail.com" className="contact-option contact-option-1">Inbox me</a>
                     <a href="https://linkedin.com/in/mhliew-regina" target="_blank" className="contact-option contact-option-2">LinkedIn Connection</a>
                     <a href="https://github.com/l-reginamh" target="_blank" className="contact-option contact-option-3">Checkout my Github</a>
+                    <a href="https://reggienotes.vercel.app/" target="_blank" className="contact-option contact-option-1">Learn more with my Blog</a>
                 </div>
             </div>
         </div>
