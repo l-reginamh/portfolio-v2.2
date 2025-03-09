@@ -419,7 +419,7 @@ button.theme-toggle:hover {
 
 .skill-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -434,7 +434,11 @@ button.theme-toggle:hover {
   background-color: var(--background);
 }
 
-.skill-item:first-child {
+.mb {
+  margin-bottom: 20px;
+}
+
+.skill-item {
   margin-left: 0px;
 }
 
