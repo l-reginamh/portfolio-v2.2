@@ -9,8 +9,7 @@
       "**/node_modules/**"
     ],
     "frameworksBackend": {
-      "region": "asia-southeast1"
-    },
-    "cleanUrls": true
+      "region": "asia-east1"
+    }
   }
 }
