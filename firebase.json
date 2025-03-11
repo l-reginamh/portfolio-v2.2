@@ -1,16 +1,12 @@
 {
   "hosting": {
     "public": "public",
-    "source": ".",
-    "ignore": [
-      ".env",
-      ".env.local",
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "frameworksBackend": {
-      "region": "asia-east1"
-    }
+    "ignore": ["firebase.json", "/.", "/node_modules/*"],
+    "rewrites": [
+      {
+        "source": "",
+        "function": "nextjsFunc"
+      }
+    ]
   }
 }
