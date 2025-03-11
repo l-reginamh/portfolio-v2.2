@@ -6,6 +6,12 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - firebase
+env:
+  REACT_APP_AIRTABLE_API_KEY: '${{ secrets.AIRTABLE_API_KEY }}'
+  REACT_APP_AIRTABLE_BASE_ID: '${{ secrets.AIRTABLE_BASE_ID }}'
+  REACT_APP_EXPERIENCES: '${{ secrets.TABLE_EXPERIENCES }}'
+  REACT_APP_PROJECTS: '${{ secrets.TABLE_PROJECTS }}'
+  REACT_APP_SKILLS: '${{ secrets.TABLE_SKILLS }}'
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
